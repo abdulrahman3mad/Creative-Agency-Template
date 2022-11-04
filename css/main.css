@@ -1,0 +1,81 @@
+@import "utilities.css";
+@import "default.css";
+@import "media.css";
+
+/* Start Header Style */
+.main-nav{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 5
+}
+
+.main-nav .logo > *{
+    color: red;
+    font-size: 1.9rem;
+}
+
+.main-nav .nav-items .nav-item{padding: 30px 0}
+
+.main-nav .nav-items .nav-item>*{
+    padding:0 15px;
+    color:white;
+    transition: color 0.5s;
+}
+
+.main-nav .nav-items .nav-item:hover>* {color:red}
+/* End Header Style */
+
+/* Start Welcome Style*/
+.welcome{
+    background-image: url("../imgs/1.jpg");
+    background-size: cover;
+    height:100vh /* Notice */;    
+    transition: background-image 0.5s;
+}
+
+.welcome .text-container{width: 70vw}
+.welcome .welcome-header {font-size:clamp(3rem, 8vw, 4.3rem)}
+.welcome .welcome-header span{color:rgb(255 249 128); text-transform:uppercase;}
+.welcome .welcome-text{width:70%; color:rgb(228, 228, 228)}
+.welcome .text-container{
+    /* position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+
+.welcome .prev, .welcome .next{
+    height: 100%;
+    top:0;
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    padding:40px;
+}
+
+.welcome .prev > i,
+.welcome .next > i
+{
+    color:white;
+    position: relative;
+    top:50%;
+    color:white;    
+    font-size:2rem;
+}
+.welcome .prev {left:0%}
+
+.welcome .next{
+    right: 0%
+    /* Not left: 100% --> because it's gonna draw it after the welcome which makes overflow */
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.welcome .container {z-index: 3}
+/* End Welcome Style*/
