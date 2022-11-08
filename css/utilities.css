@@ -6,6 +6,8 @@
 
 .justify-space-between {justify-content: space-between;}
 
+.justify-content-center {justify-content: center;}
+
 .align-items-center {align-items: center}
 
 .clr-white {color:white;}
@@ -84,3 +86,24 @@
 .w-100 {width: 100%;}
 
 .h-100 {height: 100%}
+
+
+.clr-1{
+    background-color: rgb(255 249 128);
+}
+
+.clr-2{
+    background-color: #C6743E
+}
+
+.clr-3{
+    background-color: #2F69BF
+}
+
+.clr-4{
+    background-color: #53C9B1
+}
+
+.clr-5{
+    background-color: #39556D
+}

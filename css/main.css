@@ -12,19 +12,21 @@
 }
 
 .main-nav .logo > *{
-    color: red;
+    color: var(--main-clr);
     font-size: 1.9rem;
 }
 
-.main-nav .nav-items .nav-item{padding: 30px 0}
-
 .main-nav .nav-items .nav-item>*{
-    padding:0 15px;
+    padding:30px 15px;
     color:white;
+    display: inline-block;
     transition: color 0.5s;
 }
 
-.main-nav .nav-items .nav-item:hover>* {color:red}
+
+.main-nav .nav-items .nav-item:hover>*,
+.main-nav .nav-items .nav-item.active>*
+ {color:var(--main-clr);}
 /* End Header Style */
 
 /* Start Welcome Style*/
@@ -37,7 +39,7 @@
 
 .welcome .text-container{width: 70vw}
 .welcome .welcome-header {font-size:clamp(3rem, 8vw, 4.3rem)}
-.welcome .welcome-header span{color:rgb(255 249 128); text-transform:uppercase;}
+.welcome .welcome-header span{color:var(--main-clr); text-transform:uppercase;}
 .welcome .welcome-text{width:70%; color:rgb(228, 228, 228)}
 .welcome .text-container{
     /* position: absolute;
@@ -79,3 +81,64 @@
 
 .welcome .container {z-index: 3}
 /* End Welcome Style*/
+
+/* Start Setting Box Style */
+.setting-box{
+    padding:40px 10px;
+    background-color: white;
+    position: absolute;
+    top:0;
+    text-align: center;
+    width:250px;
+    left:-250px;
+    height: 100%;
+    z-index: 10;
+    transition: 0.7s left;
+}
+
+.setting-box.viewed{left:0}
+
+.setting-box .setting-icon{
+    position: absolute;
+    left:98%;
+    background-color:white;
+    cursor: pointer;
+    border-radius: 2px;
+    top:150px;
+    font-size:1.1rem;
+}
+
+.setting-box .setting-icon > *{padding:12px 18px}
+
+.setting-box .options-header{
+    color:rgb(113, 113, 113);
+    font-size: 1.3rem;
+}
+
+.setting-box .colors-box {
+    background-color:rgb(239, 239, 239);
+    padding:20px;
+}
+
+.setting-box  .colors .clr{
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-right: 10px;
+    opacity: 0.5;
+    transition: 0.5s all;
+}
+
+.setting-box .colors .clr.active,
+.setting-box .colors .clr:hover
+{
+    opacity: 1;
+    border:2px solid gray
+}
+
+
+
+
+/* End Setting Box Style */
+

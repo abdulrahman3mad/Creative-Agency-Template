@@ -15,23 +15,46 @@
     <title>Document</title>
   </head>
   <body>
+    <!--Start Setting Box-->
+    <section class="setting-box" id="setting-box">
+      <span class="setting-icon" id="setting-icon"
+        ><i class="fa-solid fa-gear"></i
+      ></span>
+      <section class="setting-container">
+        <div class="colors-box">
+          <h3 class="options-header pb-3">Colors</h3>
+          <ul class="colors d-flex justify-content-center align-items-center">
+            <li class="clr clr-1 active"></li>
+            <li class="clr clr-2"></li>
+            <li class="clr clr-3"></li>
+            <li class="clr clr-4"></li>
+            <li class="clr clr-5"></li>
+          </ul>
+        </div>
+      </section>
+    </section>
+    <!--End Setting Box-->
+
     <!--Start NavBar-->
     <header class="main-nav">
       <div class="container">
         <nav class="d-flex justify-space-between align-items-center">
           <h1 class="logo fw-bold"><a href="index.html">Nature</a></h1>
           <ul class="nav-items clr-white d-flex">
+            <li class="nav-item active">
+              <a href="#">Home</a>
+            </li>
             <li class="nav-item">
               <a href="#">About</a>
             </li>
             <li class="nav-item">
-              <a href="nav-link">Services</a>
+              <a href="#">Services</a>
             </li>
             <li class="nav-item">
-              <a href="nav-link">Products</a>
+              <a href="#">Products</a>
             </li>
             <li class="nav-item">
-              <a href="nav-link">Contact</a>
+              <a href="#">Contact</a>
             </li>
           </ul>
         </nav>
@@ -43,8 +66,12 @@
     <section class="welcome d-flex align-items-center ps-relative" id="welcome">
       <div class="overlay ps-absolute w-100 h-100"></div>
       <div class="container">
-        <span class="prev" id="prev-img"><i class="fa-solid fa-left-long"></i></span>
-        <span class="next" id="next-img"><i class="fa-solid fa-right-long"></i></span>
+        <span class="prev" id="prev-img"
+          ><i class="fa-solid fa-left-long"></i
+        ></span>
+        <span class="next" id="next-img"
+          ><i class="fa-solid fa-right-long"></i
+        ></span>
         <div class="text-container clr-white">
           <h2 class="welcome-header fs-6 pb-4">
             Nature is the most beautiful <span>gift</span> in the world
