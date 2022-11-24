@@ -21,7 +21,8 @@
         ><i class="fa-solid fa-gear"></i
       ></span>
       <section class="setting-container">
-        <div class="colors-box">
+        <!-- Start Colors Box-->
+        <div class="colors-setting mb-5 individual-setting">
           <h3 class="options-header pb-3">Colors</h3>
           <ul class="colors d-flex justify-content-center align-items-center">
             <li class="clr clr-1 active"></li>
@@ -31,30 +32,83 @@
             <li class="clr clr-5"></li>
           </ul>
         </div>
+        <!-- End Colors Box-->
+
+        <!--Start Background Option Turn on/off-->
+        <div class="background-setting individual-setting mb-5">
+          <h3 class="options-header pb-3">Background Turning</h3>
+          <div class="bk-btns">
+            <button class="bk-btn active-btn active" data-activate="true">
+              Yes
+            </button>
+            <button class="bk-btn unactive-btn" data-activate="false">
+              No
+            </button>
+          </div>
+        </div>
+        <!--End Background Option Turn on/off-->
+
+        <!--Start Navigation Bullets Option Turn on/off-->
+        <div class="navigation-bullets-setting individual-setting mb-3">
+          <h3 class="options-header pb-3">Navigation Bullets</h3>
+          <div class="bk-btns">
+            <button class="bk-btn active-btn active" data-activate="true">
+              Yes
+            </button>
+            <button class="bk-btn unactive-btn" data-activate="false">
+              No
+            </button>
+          </div>
+        </div>
+        <!--End Navigation Bullets Option Turn on/off-->
+
+        <!--Start Reset Option-->
+        <div class="reset-option" id="reset">
+          <p>Reset Options</p>
+        </div>
+        <!--End Reset Option-->
       </section>
     </section>
     <!--End Setting Box-->
 
     <!--Start NavBar-->
-    <header class="main-nav">
+    <header class="main-nav" id="nav">
       <div class="container">
         <nav class="d-flex justify-space-between align-items-center">
           <h1 class="logo fw-bold"><a href="index.html">Nature</a></h1>
-          <ul class="nav-items clr-white d-flex">
-            <li class="nav-item active">
+          <div class="nav-list-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          
+          <ul class="nav-items none clr-white">
+            <li class="nav-item active" data-nav-to="nav">
               <a href="#">Home</a>
             </li>
-            <li class="nav-item">
-              <a href="#">About</a>
+
+            <li class="nav-item" data-nav-to="about-us">
+              <a href="#">About Us</a>
             </li>
-            <li class="nav-item">
-              <a href="#">Services</a>
+
+            <li class="nav-item" data-nav-to="our-skills">
+              <a href="#">Our Skills</a>
             </li>
-            <li class="nav-item">
-              <a href="#">Products</a>
+
+            <li class="nav-item" data-nav-to="our-gallery">
+              <a href="#">Our Gallery</a>
             </li>
-            <li class="nav-item">
-              <a href="#">Contact</a>
+
+            <li class="nav-item" data-nav-to="time-line">
+              <a href="#">Time Line</a>
+            </li>
+
+            <li class="nav-item" data-nav-to="our-features">
+              <a href="#">Our Features</a>
+            </li>
+
+            <li class="nav-item" data-nav-to="testimonials">
+              <a href="#">Testimonials</a>
             </li>
           </ul>
         </nav>
@@ -65,16 +119,17 @@
     <!--Start Welcome Section-->
     <section class="welcome d-flex align-items-center ps-relative" id="welcome">
       <div class="overlay ps-absolute w-100 h-100"></div>
-      <div class="container">
-        <span class="prev" id="prev-img"
+      <span class="prev" id="prev-img"
           ><i class="fa-solid fa-left-long"></i
         ></span>
         <span class="next" id="next-img"
           ><i class="fa-solid fa-right-long"></i
         ></span>
+      <div class="container">
+        
         <div class="text-container clr-white">
           <h2 class="welcome-header fs-6 pb-4">
-            Nature is the most beautiful <span>gift</span> in the world
+            We are the most <span>Creative</span> Agency around the globe
           </h2>
           <p class="welcome-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
@@ -84,8 +139,415 @@
         </div>
       </div>
     </section>
-    <!--Start Welcome Section-->
+    <!--End Welcome Section-->
 
-    <script src="js/script.js"></script>
+    <!--Start About Us-->
+    <div class="container">
+      <section class="about-us d-flex justify-content-center" id="about-us">
+        <div class="text-box pb-4">
+          <h3 class="text-header">About Us</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas,
+            dolore expedita modi doloremque est fugit ut distinctio, obcaecati
+            repudiandae, quia iusto? Minus quasi nam possimus vitae impedit
+            doloribus in a nesciunt deserunt voluptates, fuga rerum accusantium
+            saepe debitis pariatur dolorum repellendus eaque similique error
+            corporis sunt nobis suscipit? Odit laboriosam quo commodi. Quam
+            officiis quaerat eos rerum deserunt aut temporibus.
+          </p>
+        </div>
+        <div class="img-box text-center">
+          <img src="imgs/colored-imgs/clr-1.png" alt="" />
+        </div>
+      </section>
+    </div>
+    <!--End About Us-->
+
+    <!-- Start Our Skills -->
+    <section class="our-skills text-center" id="our-skills">
+      <div class="container">
+        <h3 class="text-header">Our Skills</h3>
+        <div class="skills-progress clr1"></div>
+      </div>
+    </section>
+    <!-- End Our Skills -->
+
+    <!--Start Our Gallery-->
+    <section class="our-gallery" id="our-gallery">
+      <div class="container">
+        <h3 class="text-header text-center">Our Gallery</h3>
+        <div class="imgs d-flex">
+          <div class="img-container">
+            <img src="imgs/slider/1.jpg" alt="Image One" loading="lazy" />
+          </div>
+
+          <div class="img-container">
+            <img src="imgs/slider/2.jpg" alt="Image One" loading="lazy" />
+          </div>
+
+          <div class="img-container">
+            <img src="imgs/slider/3.jpg" alt="Image One" loading="lazy" />
+          </div>
+
+          <div class="img-container">
+            <img src="imgs/slider/4.jpg" alt="Image One" loading="lazy" />
+          </div>
+
+          <div class="img-container">
+            <img src="imgs/slider/5.jpg" alt="Image One" loading="lazy" />
+          </div>
+
+          <div class="img-container">
+            <img src="imgs/slider/6.jpg" alt="Image One" loading="lazy" />
+          </div>
+
+          <div class="img-container">
+            <img src="imgs/slider/1.jpg" alt="Image One" loading="lazy" />
+          </div>
+
+          <div class="img-container">
+            <img src="imgs/slider/2.jpg" alt="Image One" loading="lazy" />
+          </div>
+
+          <div class="img-container">
+            <img src="imgs/slider/3.jpg" alt="" loading="lazy" />
+          </div>
+
+          <div class="img-container">
+            <img src="imgs/slider/4.jpg" alt="" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Our Gallery-->
+
+    <!-- Start TimeLine -->
+    <section class="time-line" id="time-line">
+      <div class="container">
+        <div class="single-time-line">
+          <div class="year">2020</div>
+          <div class="task left">
+            <h3 class="task-heading">Testing Heading</h3>
+            <p class="task-desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque,
+              modi. Possimus dolorum hic recusandae assumenda officiis
+              cupiditate voluptatibus nesciunt libero.
+            </p>
+          </div>
+
+          <div class="task right">
+            <h3 class="task-heading">Testing Heading</h3>
+            <p class="task-desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque,
+              modi. Possimus dolorum hic recusandae assumenda officiis
+              cupiditate voluptatibus nesciunt libero.
+            </p>
+          </div>
+        </div>
+
+        <div class="single-time-line">
+          <div class="year">2019</div>
+          <div class="task left">
+            <h3 class="task-heading">Testing Heading</h3>
+            <p class="task-desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque,
+              modi. Possimus dolorum hic recusandae assumenda officiis
+              cupiditate voluptatibus nesciunt libero.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End TimeLine -->
+
+    <!--Start Our Features-->
+    <section class="our-features" id="our-features">
+      <div class="container">
+        <h3 class="text-header text-center">Our Features</h3>
+        <div class="features d-flex">
+          <div class="feature">
+            <div class="img-container">
+              <img src="imgs/slider/1.jpg" alt="" />
+            </div>
+            <h4 class="feature-header">Development</h4>
+            <hr />
+            <p class="feature-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui,
+              ipsa?
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="img-container">
+              <img src="imgs/slider/2.jpg" alt="" />
+            </div>
+            <h4 class="feature-header">Development</h4>
+            <hr />
+            <p class="feature-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui,
+              ipsa?
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="img-container">
+              <img src="imgs/slider/3.jpg" alt="" />
+            </div>
+            <h4 class="feature-header">Development</h4>
+            <hr />
+            <p class="feature-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui,
+              ipsa?
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="img-container">
+              <img src="imgs/slider/4.jpg" alt="" />
+            </div>
+            <h4 class="feature-header">Development</h4>
+            <hr />
+            <p class="feature-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui,
+              ipsa?
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="img-container">
+              <img src="imgs/slider/5.jpg" alt="" />
+            </div>
+            <h4 class="feature-header">Development</h4>
+            <hr />
+            <p class="feature-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui,
+              ipsa?
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="img-container">
+              <img src="imgs/slider/6.jpg" alt="" />
+            </div>
+            <h4 class="feature-header">Development</h4>
+            <hr />
+            <p class="feature-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui,
+              ipsa?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Our Features-->
+
+    <!--Start Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <h3 class="text-header">Testimonials</h3>
+        <div class="testi-boxes">
+          <div class="testi-box">
+            <div class="testi-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+                architecto suscipit unde non vel minima magnam recusandae
+                tempora repellat numquam.
+              </p>
+
+              <div class="writer-info">
+                <img src="imgs/slider/1.jpg" alt="" />
+                <div>
+                  <p class="writer-name">Ahmed Mosaad</p>
+                  <span class="writer-job">CEO At Company</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-box">
+            <div class="testi-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+                architecto suscipit unde non vel minima magnam recusandae
+                tempora repellat numquam.
+              </p>
+
+              <div class="writer-info">
+                <img src="imgs/slider/1.jpg" alt="" />
+                <div>
+                  <p class="writer-name">Ahmed Mosaad</p>
+                  <span class="writer-job">CEO At Company</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-box">
+            <div class="testi-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+                architecto suscipit unde non vel minima magnam recusandae
+                tempora repellat numquam.
+              </p>
+
+              <div class="writer-info">
+                <img src="imgs/slider/1.jpg" alt="" />
+                <div>
+                  <p class="writer-name">Ahmed Mosaad</p>
+                  <span class="writer-job">CEO At Company</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-box">
+            <div class="testi-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+                architecto suscipit unde non vel minima magnam recusandae
+                tempora repellat numquam.
+              </p>
+
+              <div class="writer-info">
+                <img src="imgs/slider/1.jpg" alt="" />
+                <div>
+                  <p class="writer-name">Ahmed Mosaad</p>
+                  <span class="writer-job">CEO At Company</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-box">
+            <div class="testi-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+                architecto suscipit unde non vel minima magnam recusandae
+                tempora repellat numquam.
+              </p>
+
+              <div class="writer-info">
+                <img src="imgs/slider/1.jpg" alt="" />
+                <div>
+                  <p class="writer-name">Ahmed Mosaad</p>
+                  <span class="writer-job">CEO At Company</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-box">
+            <div class="testi-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+                architecto suscipit unde non vel minima magnam recusandae
+                tempora repellat numquam.
+              </p>
+
+              <div class="writer-info">
+                <img src="imgs/slider/1.jpg" alt="" />
+                <div>
+                  <p class="writer-name">Ahmed Mosaad</p>
+                  <span class="writer-job">CEO At Company</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Testimonials -->
+
+    <!--Start Navigation Bullets-->
+    <div class="navi-bullets">
+      <div class="navi-bullet" data-nav-to="nav">
+        <span class="bullet"></span>
+        <div class="navi-box">
+          <p>navbar</p>
+        </div>
+      </div>
+
+      <div class="navi-bullet" data-nav-to="about-us">
+        <span class="bullet"></span>
+        <div class="navi-box">
+          <p>About Us</p>
+        </div>
+      </div>
+
+      <div class="navi-bullet" data-nav-to="our-skills">
+        <span class="bullet"></span>
+        <div class="navi-box">
+          <p>Our Skills</p>
+        </div>
+      </div>
+
+      <div class="navi-bullet" data-nav-to="our-gallery">
+        <span class="bullet"></span>
+        <div class="navi-box">
+          <p>Our Gallery</p>
+        </div>
+      </div>
+
+      <div class="navi-bullet" data-nav-to="time-line">
+        <span class="bullet"></span>
+        <div class="navi-box">
+          <p>Time Line</p>
+        </div>
+      </div>
+
+      <div class="navi-bullet" data-nav-to="our-features">
+        <span class="bullet"></span>
+        <div class="navi-box">
+          <p>Our Features</p>
+        </div>
+      </div>
+    </div>
+    <!--End Navigation Bullets-->
+
+    <!-- Start Contact Us -->
+    <section class="contact-us text-center">
+      <div class="container">
+        <div class="map-overlay">
+          <img
+            src="imgs/dotted-world-map-white-background-vector-illustration_541075-471 (1).webp"
+            alt="map overlay"
+          />
+        </div>
+        <h3 class="text-header">Contact Us</h3>
+        <form action="">
+          <div class="col-6">
+            <div class="input-container">
+              <input type="text" placeholder="Your Name" />
+            </div>
+            <div class="input-container">
+              <input type="tel" placeholder="Your Phone" />
+            </div>
+            <div class="input-container">
+              <input type="email" placeholder="Your Email" />
+            </div>
+            <div class="input-container">
+              <input type="text" placeholder="Subject" />
+            </div>
+          </div>
+          <div class="col-6">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+            ></textarea>
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- End Contact Us -->
+
+    <!-- <div class="new-img-box">
+      <img src="screencapture-127-0-0-1-5500-index-html-2022-11-22-19_45_58.png" alt="">
+    </div> -->
+
+    <script src="js/script.js" type="module"></script>
   </body>
 </html>

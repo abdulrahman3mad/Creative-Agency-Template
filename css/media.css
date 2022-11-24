@@ -1,25 +1,139 @@
-.container {width:100%}
-
-@media screen and (min-width:576px){
-    .container {width:540px}
-}
-
-@media screen and (min-width:768px){
-    .container {width:720px}
-}
-
-@media screen and (min-width:992px){
-    .container {width:960px}
-}
-
-@media screen and (min-width:1200px){
-    .container {width:1140px}
-}
-
-@media screen and (min-width:1400px){
-    .container {width:1320px}
-}
-
+/* Start Welcome */
 @media screen and (max-width:768px){
-    .welcome .text-container {width:100% !important}
+    .welcome .welcome-text{
+        width: 100% !important;
+    }
 }
+@media screen and (max-width:350px) {
+    .welcome .welcome-text {
+        display: none;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .welcome .container {
+        padding-left: 40px
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .welcome .prev,
+    .welcome .next {
+        display: none !important;
+    }
+}
+
+/* End Welcome */
+
+/* Start About Us */
+@media screen and (max-width:998px) {
+    .about-us .text-box {
+        flex: 1 100% !important;
+    }
+
+    .about-us .img-box {
+        display: none;
+    }
+
+    .about-us img {
+        width: 100% !important;
+    }
+}
+
+/* End About Us  */
+
+/* Start Time-Line */
+@media screen and (max-width:768px) {
+    .time-line .task {
+        margin: auto;
+        z-index: 5;
+        margin-bottom: 40px;
+        width: 80% !important
+    }
+
+    .time-line .task::after {
+        display: none;
+    }
+
+    .time-line .task::before {
+        display: none;
+    }
+}
+
+/* End Time-Line */
+
+/* Start Our Features */
+@media screen and (min-width:575px) {
+    .our-features .features>* {
+        width: calc(100% / 2) !important;
+    }
+}
+
+@media screen and (min-width:998px) {
+    .our-features .features>* {
+        width: calc(100% / 3) !important;
+    }
+}
+
+/* End Our Features */
+
+/* Start Testimonials */
+@media screen and (max-width:992px) {
+    .testimonials .testi-box {
+        width: calc(100% / 2) !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .testimonials .testi-box {
+        width: 100% !important;
+    }
+}
+
+/* End Testimonials */
+
+/* Start Contact Us */
+@media screen and (max-width:768px) {
+    .contact-us form>* {
+        width: 100% !important;
+    }
+}
+
+/* End Contact Us */
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+}
+
+
+@media screen and (min-width:576px) {
+    .container {
+        max-width: 540px
+    }
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 720px
+    }
+}
+
+@media screen and (min-width:992px) {
+    .container {
+        max-width: 960px
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .container {
+        max-width: 1140px
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .container {
+        max-width: 1320px
+    }
+}
+

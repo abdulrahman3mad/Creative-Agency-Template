@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 
 :root{
-    --main-clr:rgb(255 249 128);
+    --main-clr:#22A39F;
+    --clr-1:#22A39F;
+    --clr-2:#FD841F;
+    --clr-3:#3E6D9C;
+    --clr-4:#E14D2A;
+    --clr-5:#5F9DF7;
 }
 
 body{font-family: "open sans", sans-serif;}
