@@ -1,4 +1,4 @@
-import ColorsBox from "./colorsBox.js"
+import ColorsBox from "./ColorsBox.js"
 import NavigationSettingBox from "./NavigationSettingBox.js"
 
 let SettingBox = (function () {

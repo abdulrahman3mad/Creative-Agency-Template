@@ -1,10 +1,10 @@
-import WelcomeSlider from "/js/welcomeSlider.js"
-import SettingBox from "/js/settingBox.js"
-import skillsProgress from "/js/skillsProgress.js";
-import GalleryPopUp from "/js/GalleryPopUp.js";
-import NavigationBullets from "/js/NavigationBullets.js";
-import NavigationSettingBox from "/js/NavigationSettingBox.js";
-import { toggleClasses } from "/js/utilities.js"
+import WelcomeSlider from "./WelcomeSlider.js"
+import SettingBox from "./SettingBox.js"
+import skillsProgress from "./SkillsProgress.js";
+import GalleryPopUp from "./GalleryPopUp.js";
+import NavigationBullets from "./NavigationBullets.js";
+import NavigationSettingBox from "./NavigationSettingBox.js";
+import { toggleClasses } from "./utilities.js"
 
 let ourSkills = document.querySelector(".our-skills")
 
