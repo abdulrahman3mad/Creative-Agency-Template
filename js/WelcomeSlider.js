@@ -20,7 +20,7 @@ let WelcomeSlider = (function(){
 
     let setSliderStart = (count) => {
         imgCount = count;
-        (imgCount != -1) ? welcomeSection.style.backgroundImage = `url("../imgs/slider/${imgs[imgCount]}")`:null;
+        (imgCount != -1) ? welcomeSection.style.backgroundImage = `url("/imgs/slider/${imgs[imgCount]}")`:null;
     }
 
     let setIntervalTime = (intervalTime)=>{
@@ -29,13 +29,13 @@ let WelcomeSlider = (function(){
 
     let slideLeft = ()=>{
         imgCount = imgCount <= 0 ? imgs.length - 1: imgCount - 1;
-        welcomeSection.style.backgroundImage = `url("../imgs/slider/${imgs[imgCount]}")`
+        welcomeSection.style.backgroundImage = `url("/imgs/slider/${imgs[imgCount]}")`
         localStorage.setItem("autoSlider", JSON.stringify({auto:autoSliding, count:imgCount}));
     }
 
     let slideRight = ()=>{
         imgCount = (imgCount + 1) % imgs.length;
-        welcomeSection.style.backgroundImage = `url("../imgs/slider/${imgs[imgCount]}")`
+        welcomeSection.style.backgroundImage = `url("/imgs/slider/${imgs[imgCount]}")`
         localStorage.setItem("autoSlider", JSON.stringify({auto:autoSliding.toString(), count:imgCount}));
     }
 
