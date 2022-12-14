@@ -8,7 +8,7 @@ let AboutUsImage = (function(){
 
     let setImg = (clr)=>{
         let img = imgs.find((img)=> img.includes(clr));
-        aboutUsImg.src= `/imgs/colored-imgs/${img}`;
+        aboutUsImg.src= `./imgs/colored-imgs/${img}`;
     }
 
     return {

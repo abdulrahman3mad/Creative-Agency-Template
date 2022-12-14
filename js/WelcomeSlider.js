@@ -20,7 +20,7 @@ let WelcomeSlider = (function(){
 
     let setSliderStart = (count) => {
         imgCount = count;
-        (imgCount != -1) ? welcomeSection.style.backgroundImage = `url("imgs/slider/${imgs[imgCount]}")`:null;
+        (imgCount != -1) ? welcomeSection.style.backgroundImage = `url("./imgs/slider/${imgs[imgCount]}")`:null;
     }
 
     let setIntervalTime = (intervalTime)=>{
